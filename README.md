@@ -24,7 +24,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-news-homepage-main-with-css-grid-n3TVqJ8uSg)
 - Live Site URL: [Add live site URL here](https://nisrine-c.github.io/news-homepage-main.github.io/)
 
 ## My process
