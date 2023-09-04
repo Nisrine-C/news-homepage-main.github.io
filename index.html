@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Hanken+Grotesk&family=Inter&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Hanken+Grotesk&family=Inter:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./assets/style/style.css">
+
+  <title>Frontend Mentor | News homepage</title>
+</head>
+<body>
+<div id="banner" role="banner" class="banner">
+  <img class="logo" src="./assets/images/logo.svg">
+  <img class="hamburger" src="./assets/images/icon-menu.svg" onclick="myClick(this)">
+  <div id="navbar" class="nav-bar">
+    <ul role="navigation" class="nav-list">
+      <li class="nav-elem"><a  href="javascript:void(0)" onclick="document.getElementById('main').scrollIntoView({behavior: 'smooth'})">Home</a></li>
+      <li class="nav-elem"><a href="javascript:void(0)" onclick="document.getElementById('new').scrollIntoView({behavior: 'smooth'})">New</a></li>
+      <li class="nav-elem"><a href="javascript:void(0)">Popular</a></li>
+      <li class="nav-elem"><a href="javascript:void(0)" onclick="document.getElementById('trending').scrollIntoView({behavior: 'smooth'})">Trending</a></li>
+      <li class="nav-elem"><a href="javascript:void(0)" >Categories</a></li>
+    </ul>
+  </div>
+</div>
+<div id="main" role="main" class="container">
+    <div  class="main">
+      <img class="menu-img full" src="./assets/images/image-web-3-desktop.jpg" alt=""/>
+      <img class="menu-img mobile" src="./assets/images//image-web-3-mobile.jpg" alt=""/>
+      <h1>The Bright Future of Web 3.0?</h1>
+      <div class="article">
+        <div class="paragraph">
+          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+          <button>READ MORE</button>
+        </div>
+      </div>
+    </div>
+    <div id="new" class="new">
+      <h2>New</h2>
+      <div class="new-elem">
+        <h3>Hydrogen VS Electric Cars</h3>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>  
+        <hr>
+      </div>
+      <div class="new-elem">
+        <h3>The Downsides of AI Artistry</h3>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>  
+      <hr>
+      </div>
+      <div class="new-elem">
+        <h3>Is VC Funding Drying Up?</h3>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>  
+      </div>
+    </div>
+  <div id="trending"class="trending">
+    <div class="card">
+      <img src="./assets/images/image-retro-pcs.jpg">
+      <div class="content">
+        <h1>01</h1>
+        <h2>Reviving Retro PCs</h2>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./assets/images/image-top-laptops.jpg">
+      <div class="content">
+        <h1>02</h1>
+        <h2>Top 10 Laptops of 2022</h2>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./assets/images/image-gaming-growth.jpg">
+      <div class="content">
+        <h1>03</h1>
+        <h2>The Growth of Gaming</h2>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Nisrine-C">Nisrine C</a>.
+  </div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("banner");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+function myClick(e){
+  let nav  = document.getElementById("navbar");
+  if(nav.style.display == "none"){
+    nav.style.display ="flex";
+    e.setAttribute("src","./assets/images/icon-menu-close.svg");
+  }else{
+    nav.style.display="none";
+    e.setAttribute("src","./assets/images/icon-menu.svg");
+  }
+}
+</script>
+</body>
+</html>
+<body>
+</body>
+
+
+
+
+
+
+  
+
+
+    
